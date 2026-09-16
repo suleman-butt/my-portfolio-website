@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suleman Butt | DevOps Engineer</title>
+    <title>Suleman Butt | QA → DevOps</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d97757'/%3E%3Ctext x='32' y='43' font-family='JetBrains Mono, monospace' font-size='26' font-weight='700' fill='%231c140d' text-anchor='middle'%3ESB%3C/text%3E%3C/svg%3E">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -160,6 +161,8 @@
         .title { font-size: clamp(1.9rem, 4vw, 3.1rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.14; margin-bottom: 1.4rem; }
         .cursor { display: inline-block; color: var(--accent); animation: blinkCursor 1.1s steps(2) infinite; font-weight: 400; }
         @keyframes blinkCursor { 50%, 100% { opacity: 0; } 0%, 49% { opacity: 1; } }
+        .tagline { font-family: 'JetBrains Mono', monospace; font-size: 0.92rem; color: var(--text-secondary); margin-top: -0.9rem; margin-bottom: 1.6rem; letter-spacing: 0.01em; }
+        .tagline b { color: var(--text-primary); font-weight: 600; }
         .description { font-size: clamp(1rem, 1.2vw, 1.15rem); line-height: 1.8; color: var(--text-secondary); max-width: 780px; margin-bottom: 2rem; }
 
         .section-badge {
@@ -213,7 +216,7 @@
             box-shadow: 0 16px 36px -8px color-mix(in srgb, var(--accent) 65%, transparent);
         }
 
-        /* ABOUT SPLIT LAYOUT — single column so it reads top-to-bottom in one pass */
+        /* ABOUT SPLIT LAYOUT: single column so it reads top-to-bottom in one pass */
         .about-split { display: grid; grid-template-columns: 1fr; gap: 2.4rem; margin: 2.25rem 0; }
         .about-col h3 { font-family: 'JetBrains Mono', monospace; font-size: 1.05rem; font-weight: 700; margin-bottom: 1.1rem; color: var(--accent); display: flex; align-items: center; gap: 10px; }
         .about-col p { font-size: 1rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 1rem; }
@@ -315,8 +318,9 @@
                     </div>
 
                     <div class="eyebrow eyebrow-lg">$ whoami</div>
-                    <h1 class="title">QA Engineer → DevOps Engineer<span class="cursor">_</span></h1>
-                    <p class="description">I architect reliable, high-availability systems with a quality-first mindset. Currently, I'm building a series of DevOps projects designed to solve real-world infrastructure challenges. I'm passionate about creating the kind of automated, scalable systems that empower teams to ship better software at high speed.</p>
+                    <h1 class="title">QA Engineer @ Rossmann → DevOps & Cloud<span class="cursor">_</span></h1>
+                    <p class="tagline">Linux · CI/CD · GCP · <b>iSAQB CPSA-F</b> · M.Sc. (IU)</p>
+                    <p class="description">Quality, architecture, and infrastructure sit at the center of how I work, and I'm in the middle of a focused transition deeper into DevOps and Cloud Engineering. My background combines hands-on QA and test automation experience at Rossmann with a B.Sc. in Data Science. I also learn by doing: I self-host production workloads on a hardened Hetzner VPS, automate deployments with GitHub Actions, and I'm actively preparing for the GCP Associate Cloud Engineer certification.</p>
 
                     <div class="cta-group">
                         <a href="#" class="btn-primary nav-link" data-page="projects">View Projects →</a>
@@ -325,8 +329,8 @@
                     <div class="about-split">
                         <div class="about-col">
                             <h3><span>💼</span> Professional Experience</h3>
-                            <p>I've been a <b>QA Engineer at Rossmann</b> since 2023, on a cross-functional team that plans work in Kanban and Jira. Day to day, I test the <b>POS Eco-System</b>, backend APIs, and integration services running on GKE — a mix of manual testing and automation testing with <b>Eggplant (Keysight)</b>. Alongside that, I handle ad-hoc Linux server tasks, help coordinate release and update planning, and regularly weigh in on infrastructure and tooling decisions for the team.</p>
-                            <p>Being this close to the infrastructure — not just the software running on top of it — is what pulled me toward DevOps: I want to move from verifying systems to building and operating them myself.</p>
+                            <p>I've been a <b>QA Engineer at Rossmann</b> since 2023, on a cross-functional team that plans work in Kanban and Jira. Day to day, I test the <b>POS Eco-System</b>, backend APIs, and integration services running on GKE, using a mix of manual testing and automation testing with <b>Eggplant (Keysight)</b>. Alongside that, I handle ad-hoc Linux server tasks, help coordinate release and update planning, and regularly weigh in on infrastructure and tooling decisions for the team.</p>
+                            <p>Being this close to the infrastructure, not just the software running on top of it, is what pulled me toward DevOps. I want to move from verifying systems to building and operating them myself.</p>
                             <ul class="stack-list">
                                 <li>QA Engineering (POS / Backend APIs / GKE) <span>Active</span></li>
                                 <li>Automation Testing (Eggplant / Keysight) <span>Active</span></li>
@@ -340,13 +344,13 @@
 
                         <div class="about-col">
                             <h3><span>🎓</span> Academic Journey</h3>
-                            <p>B.Sc. in <b>Data Science</b> completed. That same hands-on exposure to Linux and GKE infrastructure in my QA role is what pushed me to pursue an <b>M.Sc. in DevOps & Cloud Computing</b> at IU International University, graduating May 2027 — a deliberate, structured path to turn infrastructure curiosity into formal skills in CI/CD, IaC, and container orchestration.</p>
+                            <p>B.Sc. in <b>Data Science</b> completed. That same hands-on exposure to Linux and GKE infrastructure in my QA role is what pushed me to pursue an <b>M.Sc. in DevOps & Cloud Computing</b> at IU International University, graduating May 2027. It's a deliberate, structured path to turn my infrastructure curiosity into formal skills in CI/CD, IaC, and container orchestration.</p>
                             <ul class="stack-list">
                                 <li>B.Sc. Data Science <span>✓ Completed</span></li>
-                                <li>M.Sc. DevOps & Cloud Computing <span>In Progress</span></li>
                                 <li>ISTQB Foundation <span>✓ Achieved</span></li>
-                                <li>ISAQB Foundation <span>Sep 2026</span></li>
-                                <li>GCP Associate Cloud Engineer <span>Planned</span></li>
+                                <li>iSAQB CPSA-F (Certified Software Architect) <span>✓ Achieved</span></li>
+                                <li>M.Sc. DevOps & Cloud Computing <span>In Progress</span></li>
+                                <li>GCP Associate Cloud Engineer <span>Preparing</span></li>
                             </ul>
                         </div>
                     </div>
@@ -358,14 +362,15 @@
                         <div class="skill-pill">Python</div><div class="skill-pill">SQL</div><div class="skill-pill">GCP (consumer)</div>
                         <div class="skill-pill">Datadog</div><div class="skill-pill">Jira</div><div class="skill-pill">Eggplant / Keysight</div>
                     </div>
-                    <span class="skill-group-label">currently learning — M.Sc. DevOps & Cloud Computing</span>
+                    <span class="skill-group-label">currently learning (M.Sc. DevOps & Cloud Computing)</span>
                     <div class="skills-grid-clean">
                         <div class="skill-pill-learning">Kubernetes</div><div class="skill-pill-learning">Terraform</div>
                         <div class="skill-pill-learning">GitLab CI</div><div class="skill-pill-learning">CI/CD Pipelines</div>
                     </div>
 
                     <div class="eyebrow eyebrow-lg" style="margin-top: 3.25rem;">$ contact --show</div>
-                    <h2 class="title" style="font-size: 2.1rem; margin-bottom: 1.4rem;">Get In Touch<span class="cursor">_</span></h2>
+                    <h2 class="title" style="font-size: 2.1rem; margin-bottom: 0.9rem;">Get In Touch<span class="cursor">_</span></h2>
+                    <p class="description" style="margin-bottom: 1.6rem;">Always happy to connect with others in QA, DevOps, and Cloud Engineering.</p>
                     <div class="projects-grid" style="margin-bottom: 0;">
                         <div class="project-card" style="text-align: center;">
                             <div style="font-size: 1.8rem; margin-bottom: 0.9rem;">💼</div>
@@ -416,9 +421,9 @@
                         <div class="project-card" style="border-color: color-mix(in srgb, var(--success) 55%, var(--border));">
                             <div class="project-status completed"><div class="status-indicator"></div>Completed</div>
                             <h4>Portfolio CI/CD to VPS</h4>
-                            <p>This website itself: a GitHub Actions workflow that SCPs index.html straight to the VPS on every push to main, using repo secrets for the SSH key — no manual deploys.</p>
+                            <p>This website itself: a GitHub Actions workflow that SCPs index.html straight to the VPS on every push to main, using repo secrets for the SSH key, so there's no manual deploying.</p>
                             <div class="tech-stack"><span class="tech-tag">GitHub Actions</span><span class="tech-tag">SCP</span><span class="tech-tag">VPS</span></div>
-                            <a href="https://github.com/1010sb/my-portfolio-website" target="_blank" class="project-link">View Project GitHub →</a>
+                            <a href="https://github.com/suleman-butt/my-portfolio-website" target="_blank" class="project-link">View Project GitHub →</a>
                         </div>
 
                         <div class="project-card" style="border-color: color-mix(in srgb, var(--success) 55%, var(--border));">
@@ -437,13 +442,6 @@
                     <div class="projects-grid" style="margin-bottom:1.8rem;">
                         <div class="project-card">
                             <div class="project-status"><div class="status-indicator blink"></div>Coming Soon</div>
-                            <h4>First Hand-Written Dockerfile</h4>
-                            <p>Containerising a B.Sc. Python project from scratch — writing the Dockerfile, not just pulling images. First real step past tutorial-level Docker usage.</p>
-                            <div class="tech-stack"><span class="tech-tag">Docker</span><span class="tech-tag">Python</span></div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-status"><div class="status-indicator blink"></div>Coming Soon</div>
                             <h4>CI/CD Pipeline Automation</h4>
                             <p>End-to-end automated pipeline with integrated security scanning and artifact management, extending the existing deploy workflow with real build/test stages.</p>
                             <div class="tech-stack"><span class="tech-tag">GitHub Actions</span><span class="tech-tag">Docker</span><span class="tech-tag">SonarQube</span></div>
@@ -452,7 +450,7 @@
                         <div class="project-card">
                             <div class="project-status"><div class="status-indicator blink"></div>Coming Soon</div>
                             <h4>Cloud Infrastructure as Code</h4>
-                            <p>Provisioning a real GCP resource with Terraform — modular, reproducible infrastructure managed entirely through code instead of the console.</p>
+                            <p>Provisioning a real GCP resource with Terraform, building modular, reproducible infrastructure that's managed entirely through code instead of the console.</p>
                             <div class="tech-stack"><span class="tech-tag">Terraform</span><span class="tech-tag">GCP</span></div>
                         </div>
                     </div>
@@ -489,15 +487,15 @@
                 <div class="card-body">
                     <div class="eyebrow eyebrow-lg">$ man linux-essentials</div>
                     <h1 class="title">🐧 Linux Commands for DevOps<span class="cursor">_</span></h1>
-                    <p class="description">30 hand-picked commands, each tied to a real scenario — not just what the flag does, but why you'd reach for it and what result to expect on screen.</p>
+                    <p class="description">30 hand-picked commands, each tied to a real scenario. Not just what the flag does, but why you'd reach for it and what result to expect on screen.</p>
 
                     <div class="cmd-category">
                         <span class="section-badge" style="color:var(--accent);background:color-mix(in srgb, var(--accent) 9%, transparent);border:1px solid color-mix(in srgb, var(--accent) 22%, transparent);"># system &amp; process</span>
                         <div class="cmd-grid">
-                            <div class="cmd-card"><div class="cmd-name">$ top</div><span class="cmd-example">top</span><p class="cmd-scenario"><b>Scenario:</b> A server feels sluggish and you need to know why right now.</p><p class="cmd-desc"><b>Result:</b> A live, refreshing table of every process ranked by CPU/memory — the runaway process is usually sitting at the top.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ ps aux --sort=-%mem</div><span class="cmd-example">ps aux --sort=-%mem | head</span><p class="cmd-scenario"><b>Scenario:</b> You want a one-shot snapshot of memory hogs to paste into a ticket, not a live dashboard.</p><p class="cmd-desc"><b>Result:</b> Every process on the system, sorted highest memory first — the <code>--sort</code> flag is the useful part most people miss.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ kill -9</div><span class="cmd-example">kill -9 1234</span><p class="cmd-scenario"><b>Scenario:</b> A process is hung and ignoring a normal <code>kill</code>/Ctrl+C.</p><p class="cmd-desc"><b>Result:</b> SIGKILL terminates it immediately, no cleanup — last resort, since the app can't close files or flush data first.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ pkill -f</div><span class="cmd-example">pkill -f "node server.js"</span><p class="cmd-scenario"><b>Scenario:</b> You need to kill a process by name because you don't know (or don't want to look up) its PID.</p><p class="cmd-desc"><b>Result:</b> Matches the full command line via <code>-f</code> and kills every matching process — handy after a bad deploy leaves zombie workers.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ top</div><span class="cmd-example">top</span><p class="cmd-scenario"><b>Scenario:</b> A server feels sluggish and you need to know why right now.</p><p class="cmd-desc"><b>Result:</b> A live, refreshing table of every process ranked by CPU/memory. The runaway process is usually sitting right at the top.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ ps aux --sort=-%mem</div><span class="cmd-example">ps aux --sort=-%mem | head</span><p class="cmd-scenario"><b>Scenario:</b> You want a one-shot snapshot of memory hogs to paste into a ticket, not a live dashboard.</p><p class="cmd-desc"><b>Result:</b> Every process on the system, sorted highest memory first. The <code>--sort</code> flag is the part most people miss.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ kill -9</div><span class="cmd-example">kill -9 1234</span><p class="cmd-scenario"><b>Scenario:</b> A process is hung and ignoring a normal <code>kill</code>/Ctrl+C.</p><p class="cmd-desc"><b>Result:</b> SIGKILL terminates it immediately with no cleanup, so treat it as a last resort since the app can't close files or flush data first.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ pkill -f</div><span class="cmd-example">pkill -f "node server.js"</span><p class="cmd-scenario"><b>Scenario:</b> You need to kill a process by name because you don't know (or don't want to look up) its PID.</p><p class="cmd-desc"><b>Result:</b> Matches the full command line via <code>-f</code> and kills every matching process. Handy after a bad deploy leaves zombie workers behind.</p></div>
                             <div class="cmd-card"><div class="cmd-name">$ systemctl status</div><span class="cmd-example">systemctl status nginx</span><p class="cmd-scenario"><b>Scenario:</b> A site is down and you need to know if the service is even running before debugging further.</p><p class="cmd-desc"><b>Result:</b> Shows active/failed state, the PID, recent log lines, and enabled-on-boot status in one screen.</p></div>
                         </div>
                     </div>
@@ -505,24 +503,24 @@
                     <div class="cmd-category">
                         <span class="section-badge" style="color:var(--success);background:color-mix(in srgb, var(--success) 9%, transparent);border:1px solid color-mix(in srgb, var(--success) 22%, transparent);"># disk &amp; files</span>
                         <div class="cmd-grid">
-                            <div class="cmd-card"><div class="cmd-name">$ df -h</div><span class="cmd-example">df -h</span><p class="cmd-scenario"><b>Scenario:</b> Deploys are failing with cryptic "no space left on device" errors.</p><p class="cmd-desc"><b>Result:</b> Disk usage per mounted filesystem in human-readable GB/MB (not raw block counts) — instantly shows which partition is full.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ du -sh</div><span class="cmd-example">du -sh /var/log/* | sort -rh | head</span><p class="cmd-scenario"><b>Scenario:</b> <code>df</code> says the disk is full — now you need to find which directory is actually eating the space.</p><p class="cmd-desc"><b>Result:</b> Total size per item, human-readable; piped through <code>sort -rh</code> the biggest offender lands right at the top.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ find -mtime</div><span class="cmd-example">find /var/log -name "*.log" -mtime +30</span><p class="cmd-scenario"><b>Scenario:</b> You need to clean up log files older than a month without deleting anything recent by accident.</p><p class="cmd-desc"><b>Result:</b> Lists every matching file untouched in 30+ days — verify the list, then re-run with <code>-delete</code> to actually remove them.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ df -h</div><span class="cmd-example">df -h</span><p class="cmd-scenario"><b>Scenario:</b> Deploys are failing with cryptic "no space left on device" errors.</p><p class="cmd-desc"><b>Result:</b> Disk usage per mounted filesystem in human-readable GB/MB (not raw block counts), so you can instantly see which partition is full.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ du -sh</div><span class="cmd-example">du -sh /var/log/* | sort -rh | head</span><p class="cmd-scenario"><b>Scenario:</b> <code>df</code> says the disk is full, and now you need to find which directory is actually eating the space.</p><p class="cmd-desc"><b>Result:</b> Total size per item, human-readable. Piped through <code>sort -rh</code>, the biggest offender lands right at the top.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ find -mtime</div><span class="cmd-example">find /var/log -name "*.log" -mtime +30</span><p class="cmd-scenario"><b>Scenario:</b> You need to clean up log files older than a month without deleting anything recent by accident.</p><p class="cmd-desc"><b>Result:</b> Lists every matching file untouched in 30+ days. Check the list, then re-run with <code>-delete</code> to actually remove them.</p></div>
                             <div class="cmd-card"><div class="cmd-name">$ tar -czvf</div><span class="cmd-example">tar -czvf backup.tar.gz ./app</span><p class="cmd-scenario"><b>Scenario:</b> You need one portable file to move or archive an entire app directory before a risky change.</p><p class="cmd-desc"><b>Result:</b> A single gzip-compressed archive; <code>-v</code> prints each file as it's added so you can confirm nothing was skipped.</p></div>
                             <div class="cmd-card"><div class="cmd-name">$ rsync -avz</div><span class="cmd-example">rsync -avz --delete ./app/ user@host:/srv/app/</span><p class="cmd-scenario"><b>Scenario:</b> Deploying an updated app directory to a remote server without re-uploading every file each time.</p><p class="cmd-desc"><b>Result:</b> Only changed files transfer (fast re-runs); <code>--delete</code> also removes files on the remote that no longer exist locally, keeping both sides in sync.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ lsof -i</div><span class="cmd-example">lsof -i :8080</span><p class="cmd-scenario"><b>Scenario:</b> "Address already in use" when starting a service — something else already has the port.</p><p class="cmd-desc"><b>Result:</b> Prints the exact process name and PID bound to port 8080, so you can decide to kill it or pick another port.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ lsof -i</div><span class="cmd-example">lsof -i :8080</span><p class="cmd-scenario"><b>Scenario:</b> "Address already in use" when starting a service, because something else already has the port.</p><p class="cmd-desc"><b>Result:</b> Prints the exact process name and PID bound to port 8080, so you can decide to kill it or pick another port.</p></div>
                         </div>
                     </div>
 
                     <div class="cmd-category">
                         <span class="section-badge" style="color:var(--warning);background:color-mix(in srgb, var(--warning) 9%, transparent);border:1px solid color-mix(in srgb, var(--warning) 22%, transparent);"># networking</span>
                         <div class="cmd-grid">
-                            <div class="cmd-card"><div class="cmd-name">$ ss -tulpn</div><span class="cmd-example">ss -tulpn</span><p class="cmd-scenario"><b>Scenario:</b> You just deployed a service and need to confirm it's actually listening before testing externally.</p><p class="cmd-desc"><b>Result:</b> Every TCP/UDP port currently listening, with the owning process name and PID — the modern, faster replacement for <code>netstat</code>.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ curl -I</div><span class="cmd-example">curl -I https://example.com</span><p class="cmd-scenario"><b>Scenario:</b> A service should be up — you want to check the HTTP status without downloading the whole page.</p><p class="cmd-desc"><b>Result:</b> Just the response headers (status code, server, content-type) — a 200 confirms it's alive, a 502/timeout tells you where to dig next.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ ping -c</div><span class="cmd-example">ping -c 4 8.8.8.8</span><p class="cmd-scenario"><b>Scenario:</b> A server can't reach the internet or another host — is it DNS, routing, or the network entirely?</p><p class="cmd-desc"><b>Result:</b> 4 ICMP replies with latency; <code>-c</code> stops it automatically instead of pinging forever. No reply at all usually means a firewall or routing issue.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ ssh -i</div><span class="cmd-example">ssh -i ~/.ssh/id_ed25519 deploy@203.0.113.5</span><p class="cmd-scenario"><b>Scenario:</b> Connecting to a fresh VPS that only accepts key-based auth, not passwords.</p><p class="cmd-desc"><b>Result:</b> Opens an authenticated remote shell using the specified private key — the flag to know when the server has multiple keys configured.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ ss -tulpn</div><span class="cmd-example">ss -tulpn</span><p class="cmd-scenario"><b>Scenario:</b> You just deployed a service and need to confirm it's actually listening before testing externally.</p><p class="cmd-desc"><b>Result:</b> Every TCP/UDP port currently listening, with the owning process name and PID. It's the modern, faster replacement for <code>netstat</code>.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ curl -I</div><span class="cmd-example">curl -I https://example.com</span><p class="cmd-scenario"><b>Scenario:</b> A service should be up, and you want to check the HTTP status without downloading the whole page.</p><p class="cmd-desc"><b>Result:</b> Just the response headers (status code, server, content-type). A 200 confirms it's alive; a 502 or timeout tells you where to dig next.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ ping -c</div><span class="cmd-example">ping -c 4 8.8.8.8</span><p class="cmd-scenario"><b>Scenario:</b> A server can't reach the internet or another host, and you're not sure if it's DNS, routing, or the network entirely.</p><p class="cmd-desc"><b>Result:</b> 4 ICMP replies with latency; <code>-c</code> stops it automatically instead of pinging forever. No reply at all usually means a firewall or routing issue.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ ssh -i</div><span class="cmd-example">ssh -i ~/.ssh/id_ed25519 deploy@203.0.113.5</span><p class="cmd-scenario"><b>Scenario:</b> Connecting to a fresh VPS that only accepts key-based auth, not passwords.</p><p class="cmd-desc"><b>Result:</b> Opens an authenticated remote shell using the specified private key. Good to know when the server has multiple keys configured.</p></div>
                             <div class="cmd-card"><div class="cmd-name">$ scp -r</div><span class="cmd-example">scp -r ./dist user@server:/var/www/app</span><p class="cmd-scenario"><b>Scenario:</b> You need to copy a whole build folder to a server without setting up rsync.</p><p class="cmd-desc"><b>Result:</b> Recursively copies the directory and its contents over SSH, encrypted in transit, landing at the given remote path.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ dig +short</div><span class="cmd-example">dig example.com +short</span><p class="cmd-scenario"><b>Scenario:</b> DNS was just changed (new A record, Cloudflare proxy) and you need to verify it propagated.</p><p class="cmd-desc"><b>Result:</b> Just the resolved IP address(es), no verbose DNS trace noise — quick to eyeball or script against.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ dig +short</div><span class="cmd-example">dig example.com +short</span><p class="cmd-scenario"><b>Scenario:</b> DNS was just changed (new A record, Cloudflare proxy) and you need to verify it propagated.</p><p class="cmd-desc"><b>Result:</b> Just the resolved IP address(es), with no verbose DNS trace noise, so it's quick to eyeball or script against.</p></div>
                         </div>
                     </div>
 
@@ -530,10 +528,10 @@
                         <span class="section-badge" style="color:var(--accent);background:color-mix(in srgb, var(--accent) 9%, transparent);border:1px solid color-mix(in srgb, var(--accent) 22%, transparent);"># permissions &amp; users</span>
                         <div class="cmd-grid">
                             <div class="cmd-card"><div class="cmd-name">$ ls -alh</div><span class="cmd-example">ls -alh /etc/nginx</span><p class="cmd-scenario"><b>Scenario:</b> Nginx won't start and you suspect a permissions or ownership problem in its config directory.</p><p class="cmd-desc"><b>Result:</b> Every entry including hidden dotfiles (<code>-a</code>), in long format showing owner/group/permissions (<code>-l</code>), with sizes in human-readable K/M/G (<code>-h</code>) instead of raw bytes.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ chmod 755</div><span class="cmd-example">chmod 755 deploy.sh</span><p class="cmd-scenario"><b>Scenario:</b> A deploy script fails with "permission denied" when you try to run it.</p><p class="cmd-desc"><b>Result:</b> Owner gets read/write/execute, group and others get read/execute — the standard mode for a script everyone should be able to run but only you edit.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ chmod 755</div><span class="cmd-example">chmod 755 deploy.sh</span><p class="cmd-scenario"><b>Scenario:</b> A deploy script fails with "permission denied" when you try to run it.</p><p class="cmd-desc"><b>Result:</b> Owner gets read, write, and execute; group and others get read and execute. It's the standard mode for a script everyone should be able to run but only you edit.</p></div>
                             <div class="cmd-card"><div class="cmd-name">$ chown -R</div><span class="cmd-example">chown -R www-data:www-data /var/www/app</span><p class="cmd-scenario"><b>Scenario:</b> Nginx (running as <code>www-data</code>) can't read files you just uploaded as root.</p><p class="cmd-desc"><b>Result:</b> Recursively hands ownership of the whole directory tree to the <code>www-data</code> user and group so the web server can serve it.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ sudo -u</div><span class="cmd-example">sudo -u postgres psql</span><p class="cmd-scenario"><b>Scenario:</b> You need to run a command as a specific service account (e.g. the DB user), not as root.</p><p class="cmd-desc"><b>Result:</b> Runs the command with that user's identity and environment — safer than switching to root for a task that only needs one user's privileges.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ useradd -m -s</div><span class="cmd-example">useradd -m -s /bin/bash deploy</span><p class="cmd-scenario"><b>Scenario:</b> Setting up a new VPS and you don't want to keep working as root.</p><p class="cmd-desc"><b>Result:</b> Creates a user with a home directory (<code>-m</code>) and bash as the login shell (<code>-s</code>) — ready for SSH key setup and sudo access.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ sudo -u</div><span class="cmd-example">sudo -u postgres psql</span><p class="cmd-scenario"><b>Scenario:</b> You need to run a command as a specific service account (e.g. the DB user), not as root.</p><p class="cmd-desc"><b>Result:</b> Runs the command with that user's identity and environment. It's safer than switching to root for a task that only needs one user's privileges.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ useradd -m -s</div><span class="cmd-example">useradd -m -s /bin/bash deploy</span><p class="cmd-scenario"><b>Scenario:</b> Setting up a new VPS and you don't want to keep working as root.</p><p class="cmd-desc"><b>Result:</b> Creates a user with a home directory (<code>-m</code>) and bash as the login shell (<code>-s</code>), ready for SSH key setup and sudo access.</p></div>
                         </div>
                     </div>
 
@@ -541,21 +539,21 @@
                         <span class="section-badge" style="color:var(--success);background:color-mix(in srgb, var(--success) 9%, transparent);border:1px solid color-mix(in srgb, var(--success) 22%, transparent);"># text processing &amp; search</span>
                         <div class="cmd-grid">
                             <div class="cmd-card"><div class="cmd-name">$ grep -rn</div><span class="cmd-example">grep -rn "ERROR" /var/log/app</span><p class="cmd-scenario"><b>Scenario:</b> Something failed overnight and you need every occurrence of an error across a whole log directory.</p><p class="cmd-desc"><b>Result:</b> Every matching line recursively (<code>-r</code>) across all files, prefixed with the line number (<code>-n</code>) so you can jump straight to it.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ awk '{print}'</div><span class="cmd-example">awk '{print $1, $9}' access.log</span><p class="cmd-scenario"><b>Scenario:</b> An access log has 12 columns and you only care about the IP and status code.</p><p class="cmd-desc"><b>Result:</b> Prints just the chosen whitespace-delimited columns per line — far faster than eyeballing full log lines.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ sed -i</div><span class="cmd-example">sed -i 's/DEBUG/INFO/g' config.yml</span><p class="cmd-scenario"><b>Scenario:</b> A config file was accidentally deployed with debug logging left on.</p><p class="cmd-desc"><b>Result:</b> Replaces every occurrence in place (<code>-i</code> writes the file directly) — no need to open an editor for a one-line fix.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ tail -f</div><span class="cmd-example">tail -f -n 100 /var/log/syslog</span><p class="cmd-scenario"><b>Scenario:</b> You just restarted a service and want to watch what happens as it starts.</p><p class="cmd-desc"><b>Result:</b> Prints the last 100 lines then keeps streaming new ones live — <code>Ctrl+C</code> to stop following.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ wc -l</div><span class="cmd-example">grep "ERROR" app.log | wc -l</span><p class="cmd-scenario"><b>Scenario:</b> You want to know how many errors happened today, not read them all.</p><p class="cmd-desc"><b>Result:</b> A single number — the line count from whatever was piped in — great for quick sanity checks or scripting alerts.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ awk '{print}'</div><span class="cmd-example">awk '{print $1, $9}' access.log</span><p class="cmd-scenario"><b>Scenario:</b> An access log has 12 columns and you only care about the IP and status code.</p><p class="cmd-desc"><b>Result:</b> Prints just the chosen whitespace-delimited columns per line, which is far faster than eyeballing full log lines.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ sed -i</div><span class="cmd-example">sed -i 's/DEBUG/INFO/g' config.yml</span><p class="cmd-scenario"><b>Scenario:</b> A config file was accidentally deployed with debug logging left on.</p><p class="cmd-desc"><b>Result:</b> Replaces every occurrence in place, since <code>-i</code> writes the file directly, so there's no need to open an editor for a one-line fix.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ tail -f</div><span class="cmd-example">tail -f -n 100 /var/log/syslog</span><p class="cmd-scenario"><b>Scenario:</b> You just restarted a service and want to watch what happens as it starts.</p><p class="cmd-desc"><b>Result:</b> Prints the last 100 lines then keeps streaming new ones live. Press <code>Ctrl+C</code> to stop following.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ wc -l</div><span class="cmd-example">grep "ERROR" app.log | wc -l</span><p class="cmd-scenario"><b>Scenario:</b> You want to know how many errors happened today, not read them all.</p><p class="cmd-desc"><b>Result:</b> A single number, the line count from whatever was piped in, which is great for quick sanity checks or scripting alerts.</p></div>
                         </div>
                     </div>
 
                     <div class="cmd-category">
                         <span class="section-badge" style="color:var(--warning);background:color-mix(in srgb, var(--warning) 9%, transparent);border:1px solid color-mix(in srgb, var(--warning) 22%, transparent);"># automation &amp; environment</span>
                         <div class="cmd-grid">
-                            <div class="cmd-card"><div class="cmd-name">$ crontab -e</div><span class="cmd-example">crontab -e</span><p class="cmd-scenario"><b>Scenario:</b> A backup or cleanup script needs to run automatically every night without you SSHing in manually.</p><p class="cmd-desc"><b>Result:</b> Opens the current user's cron table in an editor — add a line like <code>0 2 * * * /opt/backup.sh</code> and it runs at 2am daily.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ crontab -e</div><span class="cmd-example">crontab -e</span><p class="cmd-scenario"><b>Scenario:</b> A backup or cleanup script needs to run automatically every night without you SSHing in manually.</p><p class="cmd-desc"><b>Result:</b> Opens the current user's cron table in an editor. Add a line like <code>0 2 * * * /opt/backup.sh</code> and it runs at 2am daily.</p></div>
                             <div class="cmd-card"><div class="cmd-name">$ nohup ... &amp;</div><span class="cmd-example">nohup ./long-job.sh &gt; out.log 2&gt;&amp;1 &amp;</span><p class="cmd-scenario"><b>Scenario:</b> You start a long-running script over SSH but need to log off before it finishes.</p><p class="cmd-desc"><b>Result:</b> The process keeps running after the SSH session ends (immune to hangup signals); output is redirected to a file instead of vanishing with the terminal.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ xargs</div><span class="cmd-example">find . -name "*.tmp" | xargs rm -f</span><p class="cmd-scenario"><b>Scenario:</b> You found a list of files to delete with <code>find</code>, but <code>find ... -delete</code> isn't flexible enough for the cleanup command you need.</p><p class="cmd-desc"><b>Result:</b> Takes each line from stdin and appends it as an argument to the given command — turns a list of paths into one batch <code>rm</code> call.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ history | grep</div><span class="cmd-example">history | grep docker</span><p class="cmd-scenario"><b>Scenario:</b> You ran a complex command last week and can't remember the exact flags.</p><p class="cmd-desc"><b>Result:</b> Every past shell command containing "docker", with its history number — rerun one instantly with <code>!&lt;number&gt;</code>.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ env</div><span class="cmd-example">env | grep -i path</span><p class="cmd-scenario"><b>Scenario:</b> A script works locally but fails on the server with "command not found" — likely a PATH or missing env var issue.</p><p class="cmd-desc"><b>Result:</b> Lists every environment variable currently set in the shell, letting you confirm PATH, NODE_ENV, or similar are what the app expects.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ xargs</div><span class="cmd-example">find . -name "*.tmp" | xargs rm -f</span><p class="cmd-scenario"><b>Scenario:</b> You found a list of files to delete with <code>find</code>, but <code>find ... -delete</code> isn't flexible enough for the cleanup command you need.</p><p class="cmd-desc"><b>Result:</b> Takes each line from stdin and appends it as an argument to the given command, turning a list of paths into one batch <code>rm</code> call.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ history | grep</div><span class="cmd-example">history | grep docker</span><p class="cmd-scenario"><b>Scenario:</b> You ran a complex command last week and can't remember the exact flags.</p><p class="cmd-desc"><b>Result:</b> Every past shell command containing "docker", with its history number. Rerun one instantly with <code>!&lt;number&gt;</code>.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ env</div><span class="cmd-example">env | grep -i path</span><p class="cmd-scenario"><b>Scenario:</b> A script works locally but fails on the server with "command not found", likely a PATH or missing env var issue.</p><p class="cmd-desc"><b>Result:</b> Lists every environment variable currently set in the shell, letting you confirm PATH, NODE_ENV, or similar are what the app expects.</p></div>
                         </div>
                     </div>
 
@@ -578,7 +576,7 @@
                 <div class="card-body">
                     <div class="eyebrow eyebrow-lg">$ docker --help</div>
                     <h1 class="title">🐳 Docker Essentials<span class="cursor">_</span></h1>
-                    <p class="description">25 commands covering the day-to-day Docker workflow — building and managing images, running and debugging containers, volumes and networks, and Compose.</p>
+                    <p class="description">25 commands covering the day-to-day Docker workflow: building and managing images, running and debugging containers, volumes and networks, and Compose.</p>
 
                     <div class="cmd-category">
                         <span class="section-badge" style="color:var(--accent);background:color-mix(in srgb, var(--accent) 9%, transparent);border:1px solid color-mix(in srgb, var(--accent) 22%, transparent);"># images</span>
@@ -596,7 +594,7 @@
                         <span class="section-badge" style="color:var(--success);background:color-mix(in srgb, var(--success) 9%, transparent);border:1px solid color-mix(in srgb, var(--success) 22%, transparent);"># containers</span>
                         <div class="cmd-grid">
                             <div class="cmd-card"><div class="cmd-name">$ docker run</div><span class="cmd-example">docker run -d -p 8080:80 nginx</span><p class="cmd-desc">Create and start a new container from an image.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ docker ps</div><span class="cmd-example">docker ps -a</span><p class="cmd-desc">List containers — add -a to include stopped ones.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ docker ps</div><span class="cmd-example">docker ps -a</span><p class="cmd-desc">List containers. Add -a to include stopped ones too.</p></div>
                             <div class="cmd-card"><div class="cmd-name">$ docker stop</div><span class="cmd-example">docker stop web</span><p class="cmd-desc">Gracefully stop a running container.</p></div>
                             <div class="cmd-card"><div class="cmd-name">$ docker start</div><span class="cmd-example">docker start web</span><p class="cmd-desc">Start a previously stopped container.</p></div>
                             <div class="cmd-card"><div class="cmd-name">$ docker restart</div><span class="cmd-example">docker restart web</span><p class="cmd-desc">Restart a container.</p></div>
@@ -654,7 +652,7 @@
                 <div class="card-body">
                     <div class="eyebrow eyebrow-lg">$ git --help</div>
                     <h1 class="title">🌿 Git Essentials<span class="cursor">_</span></h1>
-                    <p class="description">24 commands covering the daily Git workflow — setup, the local commit cycle, branching and merging, working with remotes, inspecting history, and undoing mistakes safely.</p>
+                    <p class="description">24 commands covering the daily Git workflow: setup, the local commit cycle, branching and merging, working with remotes, inspecting history, and undoing mistakes safely.</p>
 
                     <div class="cmd-category">
                         <span class="section-badge" style="color:var(--accent);background:color-mix(in srgb, var(--accent) 9%, transparent);border:1px solid color-mix(in srgb, var(--accent) 22%, transparent);"># setup &amp; config</span>
@@ -711,7 +709,7 @@
                         <div class="cmd-grid">
                             <div class="cmd-card"><div class="cmd-name">$ git restore</div><span class="cmd-example">git restore --staged app.py</span><p class="cmd-desc">Unstage a file, or discard unstaged local edits back to the last commit.</p></div>
                             <div class="cmd-card"><div class="cmd-name">$ git reset --hard</div><span class="cmd-example">git reset --hard HEAD~1</span><p class="cmd-desc">Move the branch pointer back a commit, discarding changes since then.</p></div>
-                            <div class="cmd-card"><div class="cmd-name">$ git revert</div><span class="cmd-example">git revert a1b2c3d</span><p class="cmd-desc">Create a new commit that undoes a previous one — safe on shared history.</p></div>
+                            <div class="cmd-card"><div class="cmd-name">$ git revert</div><span class="cmd-example">git revert a1b2c3d</span><p class="cmd-desc">Create a new commit that undoes a previous one. Safe to use on shared history.</p></div>
                             <div class="cmd-card"><div class="cmd-name">$ git stash</div><span class="cmd-example">git stash pop</span><p class="cmd-desc">Temporarily shelve uncommitted changes, then reapply them later.</p></div>
                         </div>
                     </div>
@@ -735,7 +733,7 @@
                 <div class="card-body">
                     <div class="eyebrow eyebrow-lg">$ kubectl cheatsheet</div>
                     <h1 class="title">☸️ Kubernetes Essentials<span class="cursor">_</span></h1>
-                    <p class="description">25 kubectl commands for day-to-day cluster work — context switching, workloads, deployments and scaling, services and networking, debugging, and namespaces/secrets.</p>
+                    <p class="description">25 kubectl commands for day-to-day cluster work: context switching, workloads, deployments and scaling, services and networking, debugging, and namespaces/secrets.</p>
 
                     <div class="cmd-category">
                         <span class="section-badge" style="color:var(--accent);background:color-mix(in srgb, var(--accent) 9%, transparent);border:1px solid color-mix(in srgb, var(--accent) 22%, transparent);"># cluster &amp; context</span>
